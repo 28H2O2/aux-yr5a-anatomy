@@ -6,6 +6,8 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 for (const args of [
   ['build.mjs', '--light', '--audit'],
   ['build.mjs', '--audit'],
+  ['urinal.mjs', '--light', '--audit'],
+  ['urinal.mjs', '--audit'],
   ['combine.mjs'],
   ['scripts/prepare-site.mjs']
 ]) {

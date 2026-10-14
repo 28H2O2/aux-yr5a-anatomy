@@ -1,0 +1,79 @@
+[
+  [
+    "eval",
+    "(()=>{const frames=document.querySelectorAll('iframe');if(frames.length)throw Error('Use standalone urinal page for this recipe');for(let i=0;i<6;i++){document.querySelector('[data-step=\"'+i+'\"]').click();const s=window.__urinal.getState();if(s.stage!==i||document.body.dataset.step!==String(i))throw Error('Stage mismatch');if(document.querySelectorAll('[aria-pressed=\"true\"][data-step]').length!==1)throw Error('Step selection mismatch');const seal=document.querySelector('[data-part=\"membrane.flex\"]');if(!seal)throw Error('Missing diaphragm');const wet=getComputedStyle(document.querySelector('[data-part=\"trap.water3\"]')).display;if((wet!=='none')!==(i===3||i===4))throw Error('Outlet flow remains after flush');const upperDots=[...document.querySelectorAll('[data-flow-dot=\"pilot.high\"]')].filter(d=>d.style.opacity!=='0');if(!!upperDots.length!==s.pilot)throw Error('Pilot flow disagrees');if(i===1&&(s.pilot||s.flow))throw Error('Presence must not flush')}window.__urinal.setStep(0);if(document.documentElement.scrollWidth>innerWidth)throw Error('Horizontal overflow');return {steps:6,width:innerWidth,geometry:'present',reduced:matchMedia('(prefers-reduced-motion:reduce)').matches};})()"
+  ],
+  [
+    "shot",
+    "qa/urinal-desktop-dark.png",
+    ".iso-page"
+  ],
+  [
+    "click",
+    "[data-step=\"1\"]"
+  ],
+  [
+    "shot",
+    "qa/urinal-reflection-dark.png",
+    ".u-layout"
+  ],
+  [
+    "click",
+    "[data-step=\"2\"]"
+  ],
+  [
+    "lines",
+    "qa/urinal-lines-trigger-dark.png",
+    ".u-detail .iso-plate"
+  ],
+  [
+    "click",
+    "[data-step=\"3\"]"
+  ],
+  [
+    "shot",
+    "qa/urinal-mechanism-4x-dark.png",
+    ".u-detail .iso-plate",
+    4,
+    [
+      210,
+      70,
+      330,
+      310
+    ]
+  ],
+  [
+    "lines",
+    "qa/urinal-lines-open-dark.png",
+    ".u-detail .iso-plate"
+  ],
+  [
+    "click",
+    "[data-step=\"4\"]"
+  ],
+  [
+    "lines",
+    "qa/urinal-lines-closing-dark.png",
+    ".u-detail .iso-plate"
+  ],
+  [
+    "click",
+    "[data-step=\"5\"]"
+  ],
+  [
+    "shot",
+    "qa/urinal-trap-4x-dark.png",
+    ".u-layout .iso-plate",
+    4,
+    [
+      290,
+      445,
+      200,
+      150
+    ]
+  ],
+  [
+    "lines",
+    "qa/urinal-lines-seal-dark.png"
+  ]
+]

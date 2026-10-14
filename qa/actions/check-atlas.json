@@ -1,0 +1,7 @@
+[
+ ["until","['overview-frame','waterway-frame','urinal-frame'].every(id=>parseFloat(document.getElementById(id).style.height)>100)",20000],
+ ["eval","(async()=>{await document.fonts.load('42px \"H2O2 Macintosh\"','H2O2');await document.fonts.ready;const maker=document.querySelector('.maker-name');if(maker.href!=='https://github.com/28H2O2')throw Error('Maker URL');if(document.querySelectorAll('.chapter-nav a').length!==3)throw Error('Missing chapter');if(document.documentElement.scrollWidth>innerWidth)throw Error('Parent overflow');for(const id of ['overview-frame','waterway-frame','urinal-frame']){const f=document.getElementById(id),d=f.contentDocument;if(d.documentElement.scrollWidth>f.clientWidth+1)throw Error(id+' overflow');if(f.clientHeight<d.querySelector('.iso-page').getBoundingClientRect().bottom-2)throw Error(id+' clipped')}const d=document.getElementById('urinal-frame').contentDocument;d.querySelector('button[data-step=\"3\"]').click();if(d.querySelector('#u-main').textContent!=='开启')throw Error('Embedded controls fail');const w=document.getElementById('waterway-frame').contentDocument;w.querySelector('button[data-phase=\"3\"]').click();if(!w.querySelector('.water-layout'))throw Error('Waterway missing');return {width:innerWidth,chapters:3,fontLoaded:document.fonts.check('42px \"H2O2 Macintosh\"'),heights:[...document.querySelectorAll('iframe')].map(f=>f.clientHeight)};})()"],
+ ["eval","document.querySelector('#urinal').scrollIntoView()"],
+ ["wait",300],
+ ["shot","qa/atlas-urinal.png","#urinal"]
+]

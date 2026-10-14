@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';
+import {stages,urinalState as state} from '../urinal-model.mjs';
+assert.equal(stages.length,6);
+assert.equal(state(1).present,true);
+assert.equal(state(1).pilot,false,'Presence alone must not start the flush.');
+assert.equal(state(1).flow,0);
+assert.equal(state(2).pilot,true,'Departure starts pilot relief before the main valve opens.');
+assert.equal(state(2).lift,0);
+assert.equal(state(3).lift,1);
+assert.equal(state(3).flow,1);
+assert.equal(state(3).upper,'低于供水侧');
+assert.equal(state(4).pilot,false,'The pilot closes while the main valve is still returning.');
+assert.equal(state(4).refill,true);
+assert.ok(state(4).flow>0&&state(4).flow<1);
+assert.equal(state(5).flow,0);
+assert.equal(state(5).lift,0);
+assert.equal(state(5).upper,'接近供水压力');
+console.log('Urinal mechanism: presence, pilot relief, pressure-driven opening and refill closure passed.');

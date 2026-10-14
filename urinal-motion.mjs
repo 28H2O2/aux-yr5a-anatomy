@@ -1,0 +1,5 @@
+export function flowRuntime(flows){return `
+const flowData=${JSON.stringify(flows)},flowNodes=new Map();
+function refreshFlow(){flowNodes.clear();for(const f of flowData){const chunks=[...document.querySelectorAll('[data-flow-route]')].filter(n=>n.dataset.flowRoute===f.name).sort((a,b)=>+a.dataset.chunk-+b.dataset.chunk);if(chunks.length)flowNodes.set(f.name,{chunks,dots:[...document.querySelectorAll('[data-flow-dot]')].filter(n=>n.dataset.flowDot===f.name)})}}
+function updateFlow(time){const s=model(step);for(const f of flowData){const found=flowNodes.get(f.name);if(!found)continue;const active=f.group==='bypass'?s.refill:f.group==='pilot'?s.pilot:f.group==='sensor'?step===2:s.flow>0;found.dots.forEach((dot,i)=>{dot.style.opacity=active?'.85':'0';if(!active)return;const at=((time*.19+i/4)%1)*f.total;let n=1;while(n<f.nodes.length-1&&f.nodes[n].s<at)n++;const a=f.nodes[n-1],b=f.nodes[n],q=(at-a.s)/(b.s-a.s||1),x=a.p[0]+q*(b.p[0]-a.p[0]),y=a.p[1]+q*(b.p[1]-a.p[1]);const chunk=f.chunks.findIndex(c=>at>=c.from&&at<=c.to);if(chunk>=0&&found.chunks[chunk])found.chunks[chunk].append(dot);dot.setAttribute('cx',x);dot.setAttribute('cy',y)})}}
+`}

@@ -1,0 +1,10 @@
+[
+ ["eval","(()=>{if(document.documentElement.scrollWidth>innerWidth)throw Error('Horizontal overflow');document.querySelector('[data-step=\"3\"]').click();return window.__urinal.getState();})()"],
+ ["eval","scrollTo(0,0)"],
+ ["wait",300],
+ ["shot","qa/urinal-phone.png",".iso-page"],
+ ["eval","document.querySelector('#u-theme').click();if(document.body.dataset.theme!=='dark')throw Error('Theme switch failed');"],
+ ["eval","scrollTo(0,0)"],
+ ["wait",300],
+ ["shot","qa/urinal-phone-dark.png",".iso-page"]
+]

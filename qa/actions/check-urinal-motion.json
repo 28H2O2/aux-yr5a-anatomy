@@ -1,0 +1,17 @@
+[
+ ["click","[data-step=\"3\"]"],
+ ["eval","window.qaDots=[...document.querySelectorAll('[data-flow-dot=\"outlet.pipe\"]')].map(n=>[n.getAttribute('cx'),n.getAttribute('cy')]);"],
+ ["wait",500],
+ ["eval","(()=>{const next=[...document.querySelectorAll('[data-flow-dot=\"outlet.pipe\"]')].map(n=>[n.getAttribute('cx'),n.getAttribute('cy')]);if(JSON.stringify(next)===JSON.stringify(window.qaDots))throw Error('Flow did not animate');for(const dot of document.querySelectorAll('[data-flow-dot]'))if(dot.parentElement.dataset.flowRoute!==dot.dataset.flowDot)throw Error('Particle in wrong route');return {flowAnimated:true};})()"],
+ ["click","[data-step=\"0\"]"],
+ ["click","#u-play"],
+ ["until","document.body.dataset.step==='1'",12000],
+ ["click","#u-play"],
+ ["click","[data-step=\"3\"]"],
+ ["shot","qa/urinal-moving.png",".u-layout"],
+ ["eval","(()=>{const space=document.createElement('div');space.style.height='1400px';document.body.append(space);scrollTo(0,document.body.scrollHeight-innerHeight);})()"],
+ ["wait",500],
+ ["eval","window.qaDots=[...document.querySelectorAll('[data-flow-dot=\"outlet.pipe\"]')].map(n=>[n.getAttribute('cx'),n.getAttribute('cy')]);"],
+ ["wait",500],
+ ["eval","(()=>{const next=[...document.querySelectorAll('[data-flow-dot=\"outlet.pipe\"]')].map(n=>[n.getAttribute('cx'),n.getAttribute('cy')]);if(JSON.stringify(next)!==JSON.stringify(window.qaDots))throw Error('Offscreen flow did not stop');return {offscreenStopped:true};})()"]
+]

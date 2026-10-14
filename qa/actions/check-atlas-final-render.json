@@ -1,0 +1,6 @@
+[
+ ["until","['overview-frame','waterway-frame','urinal-frame'].every(id=>parseFloat(document.getElementById(id).style.height)>100)",20000],
+ ["eval","(()=>{for(const id of ['overview-frame','waterway-frame','urinal-frame']){const f=document.getElementById(id),d=f.contentDocument;if(d.documentElement.scrollWidth>f.clientWidth+1)throw Error('Overflow '+id);if(f.clientHeight<d.querySelector('.iso-page').getBoundingClientRect().bottom-2)throw Error('Clipped '+id)}document.querySelector('#overview').style.display='none';document.querySelector('#waterway').style.display='none';document.querySelector('#urinal-frame').contentDocument.querySelector('button[data-step=\"3\"]').click();scrollTo(0,0);return {width:innerWidth,allFramesFit:true};})()"],
+ ["wait",400],
+ ["shot","qa/atlas-final-focused.png",".share-page"]
+]

@@ -1,0 +1,10 @@
+[
+ ["eval","window.__urinal.setStep(3);scrollTo(0,0);"],
+ ["shot","qa/urinal-smooth-final.png",".u-layout"],
+ ["shot","qa/urinal-bowl-final-4x.png",".u-layout .iso-plate",4,[275,345,190,240]],
+ ["lines","qa/urinal-smooth-lines.png"],
+ ["eval","document.getElementById('u-theme').click();window.__urinal.setStep(5);scrollTo(0,0);"],
+ ["shot","qa/urinal-smooth-final-dark.png",".u-layout"],
+ ["shot","qa/urinal-bowl-final-4x-dark.png",".u-layout .iso-plate",4,[275,345,190,240]],
+ ["lines","qa/urinal-smooth-lines-dark.png"]
+]
