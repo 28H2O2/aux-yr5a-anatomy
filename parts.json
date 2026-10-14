@@ -35,7 +35,12 @@
     "shapeCount": 1
   },
   {
-    "name": "hot.mount-R",
+    "name": "hot.heater-back",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-contact",
     "group": "hot",
     "shapeCount": 1
   },
@@ -120,7 +125,17 @@
     "shapeCount": 1
   },
   {
-    "name": "hot.inlet",
+    "name": "hot.mount-R",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-base-back",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-front",
     "group": "hot",
     "shapeCount": 1
   },
@@ -135,12 +150,12 @@
     "shapeCount": 1
   },
   {
-    "name": "hot.bottom",
+    "name": "hot.insulation",
     "group": "hot",
     "shapeCount": 1
   },
   {
-    "name": "hot.insulation",
+    "name": "hot.inlet",
     "group": "hot",
     "shapeCount": 1
   },
@@ -150,27 +165,17 @@
     "shapeCount": 1
   },
   {
+    "name": "hot.heater-base-front",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.bottom",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
     "name": "hot.tank-wall",
-    "group": "hot",
-    "shapeCount": 1
-  },
-  {
-    "name": "hot.heater-base",
-    "group": "hot",
-    "shapeCount": 1
-  },
-  {
-    "name": "hot.heater-back",
-    "group": "hot",
-    "shapeCount": 1
-  },
-  {
-    "name": "hot.heater-contact",
-    "group": "hot",
-    "shapeCount": 1
-  },
-  {
-    "name": "hot.heater-front",
     "group": "hot",
     "shapeCount": 1
   },

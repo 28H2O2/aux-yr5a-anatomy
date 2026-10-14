@@ -13,7 +13,6 @@ const W=700,H=880;
 const P=k.fitProjection([[-96,0,-7],[66,120,-7],[-60,0,312],[60,110,312],[-54,-4,508],[54,104,508]],W,H,{pad:60,azimuth:62,elevation:18});
 const R=A.recorder(P);
 const at=p=>k.iso(p,P), S=k.solidSvg, L=k.lineSvg;
-const groups={frame:'机架与储物区',bottle:'水桶与聪明座',reservoir:'上部储水腔',cold:'常温直通水路',hot:'热罐与热水管',control:'温控与电路',outlet:'取水阀与接水盘'};
 function put(name,group,center,svg,shape,cls=''){
   R.put({name,piece:'machine',at:center,group,cls,svg,shapes:[R.solid(shape)]});
 }
@@ -99,11 +98,13 @@ cyl('hot.bottom','hot',-22,38,202,21,3,{tone:'hi'});
 arcShell('hot.tank-wall','hot',-22,38,205,19.6,21,56,{tone:'hi'});
 arcShell('hot.insulation','hot',-22,38,205,21,23,56,{tone:'lo'});
 cyl('hot.top','hot',-22,38,261,21,3,{tone:'hi',inner:L(k.ring(-22,38,17,264,P,72),{tone:'lo'})});
-// Cut face exposes an illustrative heating assembly; form is not a verified YR-5-A part.
-cyl('hot.heater-base','hot',-22,38,205,14,2,{tone:'mid'});
-arcShell('hot.heater-back','hot',-22,38,207,9,11,3,{tone:'hi'});
-arcShell('hot.heater-front','hot',-22,38,207,9,11,3,{tone:'hi',start:325,end:505});
-cyl('hot.heater-contact','hot',-22,38,207,3.6,3,{tone:'mid'});
+// Illustrative base-contact heater, matching the enlarged water-path figure.
+// Its annular mounting plate leaves the central lower inlet clear.
+arcShell('hot.heater-base-back','hot',-22,38,200,6,14,2,{tone:'mid'});
+arcShell('hot.heater-base-front','hot',-22,38,200,6,14,2,{tone:'mid',start:325,end:505});
+arcShell('hot.heater-back','hot',-22,38,197,9,11,3,{tone:'hi'});
+arcShell('hot.heater-front','hot',-22,38,197,9,11,3,{tone:'hi',start:325,end:505});
+cyl('hot.heater-contact','hot',-12,38,194,2,3,{tone:'mid'});
 // Flat-faced couplings are drawn at actual tube terminals.
 for(const [name,x,y,z] of [['cold.source',30,64,271],['hot.source',15,40,271],['hot.inlet',-22,38,199],['hot.vent0',-22,32,264],['hot.vent1',-22,32,271]])cyl(name,name.startsWith('cold')?'cold':'hot',x,y,z,3.4,3,{tone:'mid'});
 cyl('hot.outlet-neck','hot',-22,46,264,1.4,2.929,{tone:'mid'});
@@ -152,7 +153,7 @@ const info=[
  ['bottle','01','水桶与聪明座','外观已确认','倒置水桶由桶座承托。桶口座芯形成供水与进气通道；储水腔水位下降时，空气进入桶内，桶水继续补入。','照片确认外部桶与座；座芯结构参考同类专利。'],
  ['reservoir','02','上部储水腔','内部位置推定','先接住从桶口流出的常温水，再分给两个取水支路。储水腔水位与桶口的进气、封水关系共同控制补水。','腔体形状、容积和分支位置未取得本机拆机证据。'],
  ['cold','03','常温直通支路','温热型已确认','水从储水腔经管道和常温阀直接到出水嘴。这里的“常温”指未加热的桶装水，随环境与进水温度变化。','功能由用户确认；管道与阀内部仅作结构示意。'],
- ['hot','04','机内热罐与加热件','同类结构推定','一条管道把常温水送入热罐下部。加热件向罐内水传热，热水从上部经热水管和取水阀流出。半剖罐壁让加热区可见。','热罐外形、保温层、加热件及排气回管的实际形式待拆机核对。'],
+ ['hot','04','机内热罐与加热件','同类结构推定','一条管道把常温水送入热罐下部。图示加热件贴合罐底，经罐底向水传热，热水从上部经热水管和取水阀流出。半剖罐壁让加热区可见。','热罐外形、保温层、加热件及排气回管的实际形式待拆机核对。'],
  ['control','05','温控与供电','同类结构推定','温控件在达到设定状态时切断加热，降温后允许恢复；过热保护件负责异常温升保护。电源与指示、控制元件通过线束连接。','图中不指定温度阈值，也不宣称该型号一定采用所画的板件布局。'],
  ['outlet','06','取水区与机架','外观已确认','前门打开后是接水区；两个取水口分别对应热水与常温水，滴水盘接住少量滴水。下部柜体及机架承托上部组件。','没有配套烧水壶或壶底加热盘；出水口左右安排为示意。']
  ];
