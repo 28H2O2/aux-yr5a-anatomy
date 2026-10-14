@@ -1,0 +1,8 @@
+[
+  ["scroll",".water-stage"],
+  ["click","button[data-phase='5']"],
+  ["until","document.querySelector('.water-stage svg').dataset.heater==='off'",7000],
+  ["eval","(()=>{const s=document.querySelector('.water-stage svg');if(s.dataset.phase!=='5'||s.dataset.hotOpen!=='false'||s.dataset.coldOpen!=='false')throw Error('Unexpected phase/valve state while heating off');return 'Automatic thermostat switched off; valves stay closed'})()"],
+  ["until","document.querySelector('.water-stage svg').dataset.heater==='on'",7000],
+  ["eval","(()=>{const s=document.querySelector('.water-stage svg');if(s.dataset.phase!=='5')throw Error('Unexpected phase while reheating');return 'Automatic thermostat restarted after cooling'})()"]
+]

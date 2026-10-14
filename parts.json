@@ -1,0 +1,622 @@
+[
+  {
+    "name": "stand.foot0",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "stand.foot1",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "stand.foot2",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "stand.foot3",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "stand.base",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.back",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.left",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.mount-R",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:6",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:7",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:8",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:9",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:10",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:11",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.power-entry",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:2",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:3",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:4",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:5",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:6",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.lower-shelf",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.tray-shelf",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.upper-rear-rail",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.mount-L",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.inlet",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.wire-terminal",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:1",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.bottom",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.insulation",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:0",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.tank-wall",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-base",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-back",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-contact",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.heater-front",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.top",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.vent0",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.vent:0",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.vent1",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "outlet.tray",
+    "group": "outlet",
+    "shapeCount": 1
+  },
+  {
+    "name": "outlet.rest-ring0",
+    "group": "outlet",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:5",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:10",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:7",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:4",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:9",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.harness:8",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.outlet-neck",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:3",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.lower-door",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.outlet-elbow",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.thermo-pad",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.thermostat",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.open-door",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:2",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.overheat",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "outlet.rest-ring1",
+    "group": "outlet",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.front-post-lower-58",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.hinge132",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.bracket",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.standoff0",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.standoff1",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.board-terminal",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:0",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:1",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.feed:0",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.source",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.standoff2",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:1",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.standoff3",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.board",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.switch",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.circuit",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.capacitor",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.connector",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.terminals",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.hinge208",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:2",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.spout-rim",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.spout",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.stem",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.pipe:1",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:3",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "outlet.support",
+    "group": "outlet",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.valve-body",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.valve-cap",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:6",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.pipe:0",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.pipe:2",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:5",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.source",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "reservoir.base",
+    "group": "reservoir",
+    "shapeCount": 1
+  },
+  {
+    "name": "reservoir.body",
+    "group": "reservoir",
+    "shapeCount": 1
+  },
+  {
+    "name": "reservoir.lid",
+    "group": "reservoir",
+    "shapeCount": 1
+  },
+  {
+    "name": "hot.pipe:4",
+    "group": "hot",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.pipe:3",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.spout-rim",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.spout",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.stem",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.valve-body",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.front-post-lower55",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.upper-front-rail",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.front-post-upper-58",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.valve-cap",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.pipe:4",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "cold.pipe:5",
+    "group": "cold",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.front-post-upper55",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.front-panel",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.side",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.indicator0",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.indicator1",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "control.indicator2",
+    "group": "control",
+    "shapeCount": 1
+  },
+  {
+    "name": "frame.top",
+    "group": "frame",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.seat",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.seal",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.neck",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.shoulder",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.lower-band",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.lower-body",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.middle-band",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.middle-body",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.upper-band",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.upper-body",
+    "group": "bottle",
+    "shapeCount": 1
+  },
+  {
+    "name": "bottle.bottom",
+    "group": "bottle",
+    "shapeCount": 1
+  }
+]

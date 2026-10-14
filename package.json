@@ -1,0 +1,12 @@
+{
+  "name": "aux-yr5a-anatomy",
+  "version": "1.0.0",
+  "description": "奥克斯 YR-5-A 饮水机整机剖视、热水水路与储存卫生交互图",
+  "type": "module",
+  "engines": { "node": ">=20.10" },
+  "scripts": {
+    "build": "node scripts/build-project.mjs",
+    "prepare:site": "node scripts/prepare-site.mjs",
+    "preview": "node scripts/preview.mjs"
+  }
+}
